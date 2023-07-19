@@ -16,6 +16,7 @@ import React from 'react';
 import { Button } from '@mui/material';
 import { styled } from '@mui/material/styles';
 import { Card2Props } from 'types';
+import useCard2 from 'components/Card2/useCard2';
 
 const TypeQuest: any = styled('div')(({ theme }: any) => ({
   backgroundColor: theme.palette['Background']['Default'],
@@ -283,6 +284,8 @@ const ButtonContained: any = styled(Button)({
 });
 
 function Card2(props: Card2Props): JSX.Element {
+  const { fns } = useCard2();
+
   return (
     <TypeQuest className={props.className}>
       <Image1></Image1>
@@ -306,15 +309,20 @@ function Card2(props: Card2Props): JSX.Element {
               <Price>{`$1,250 / night`}</Price>
               <Rating>
                 <Star
-                  src={`assets/images/Card2_star.png`}
-                  loading="lazy"
+                  src={'assets/images/Card2_star.png'}
+                  loading={'lazy'}
                   alt={'star'}
                 />
                 <Rating1>{`4.69 (239 reviews)`}</Rating1>
               </Rating>
             </LockUp>
             <Button1>
-              <ButtonContained variant="contained" size="large" color="primary">
+              <ButtonContained
+                color={'primary'}
+                onClick={'validateBookNow'}
+                variant={'contained'}
+                size={'large'}
+              >
                 {' '}
                 BOOK NOW{' '}
               </ButtonContained>

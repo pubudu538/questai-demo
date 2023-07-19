@@ -13,35 +13,43 @@
  *
  **********************************************************************/
 
+
+export interface Card2Props {
+  className?: any;
+}
+
+
 export interface SampleCardProps {
   className?: any;
   metadata: any;
 }
 
+
 export interface SampleCardGridProps {
   className?: any;
 }
+
 
 export interface DemoCardProps {
   className?: any;
   metadata: any;
 }
 
-export interface Card2Props {
-  className?: any;
-}
 
 export interface Frame96Props {
   className?: any;
 }
 
+
 export interface BuildAreaManualBuildProps {
   className?: any;
 }
 
+
 export interface IconTimeProps {
   className?: any;
 }
+
 
 export interface IconCommitProps {
   className?: any;
