@@ -14,7 +14,33 @@
  **********************************************************************/
 
 
+
+export interface SampleCardGridProps {
+  className?: any;
+}
+
+
+
 export interface Card2Props {
+  className?: any;
+}
+
+
+
+export interface BuildAreaManualBuildProps {
+  className?: any;
+  testvl: any;
+  prop2: any;
+}
+
+
+
+export interface HandDrawn04Props {
+  className?: any;
+}
+
+
+export interface Form2Props {
   className?: any;
 }
 
@@ -25,10 +51,6 @@ export interface SampleCardProps {
 }
 
 
-export interface SampleCardGridProps {
-  className?: any;
-}
-
 
 export interface DemoCardProps {
   className?: any;
@@ -36,19 +58,17 @@ export interface DemoCardProps {
 }
 
 
+
 export interface Frame96Props {
   className?: any;
 }
 
 
-export interface BuildAreaManualBuildProps {
-  className?: any;
-}
-
 
 export interface IconTimeProps {
   className?: any;
 }
+
 
 
 export interface IconCommitProps {

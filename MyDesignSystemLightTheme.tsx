@@ -12,7 +12,7 @@ import CheckBoxOutlineBlank from './public/assets/images/_CheckBoxOutlineBlankOu
 import IndeterminateCheckBo from './public/assets/images/_IndeterminateCheckBoxFilled.svg';
 import CheckBoxFilled from './public/assets/images/_CheckBoxFilled.svg';
 
-const globalTheme: any = createTheme({
+const lightGlobalTheme: any = createTheme({
   palette: {
     '50': 'rgba(236, 239, 241, 1)',
     '100': 'rgba(207, 216, 220, 1)',
@@ -572,7 +572,7 @@ const globalTheme: any = createTheme({
   },
 } as any);
 
-const questTheme = createTheme(
+const lightQuestTheme = createTheme(
   {
     components: {
       MuiButtonBase: {
@@ -591,19 +591,19 @@ const questTheme = createTheme(
         },
         styleOverrides: {
           filledError: {
-            backgroundColor: globalTheme.palette['Error']['Main'],
+            backgroundColor: lightGlobalTheme.palette['Error']['Main'],
             borderRadius: `4px`,
           },
           filledWarning: {
-            backgroundColor: globalTheme.palette['Warning']['Main'],
+            backgroundColor: lightGlobalTheme.palette['Warning']['Main'],
             borderRadius: `4px`,
           },
           filledInfo: {
-            backgroundColor: globalTheme.palette['Info']['Main'],
+            backgroundColor: lightGlobalTheme.palette['Info']['Main'],
             borderRadius: `4px`,
           },
           filledSuccess: {
-            backgroundColor: globalTheme.palette['Success']['Main'],
+            backgroundColor: lightGlobalTheme.palette['Success']['Main'],
             borderRadius: `4px`,
           },
         },
@@ -616,28 +616,30 @@ const questTheme = createTheme(
             borderRadius: `4px`,
           },
           colorDefault: {
-            color: globalTheme.palette['Background']['Paper'],
+            color: lightGlobalTheme.palette['Background']['Paper'],
             fontStyle:
-              globalTheme.typography['Components']['Avatar Initials'].fontStyle,
+              lightGlobalTheme.typography['Components']['Avatar Initials']
+                .fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Avatar Initials']
+              lightGlobalTheme.typography['Components']['Avatar Initials']
                 .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Avatar Initials']
+              lightGlobalTheme.typography['Components']['Avatar Initials']
                 .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Avatar Initials'].fontSize,
+              lightGlobalTheme.typography['Components']['Avatar Initials']
+                .fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Avatar Initials']
+              lightGlobalTheme.typography['Components']['Avatar Initials']
                 .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Avatar Initials']
+              lightGlobalTheme.typography['Components']['Avatar Initials']
                 .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Avatar Initials']
+              lightGlobalTheme.typography['Components']['Avatar Initials']
                 .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Avatar Initials']
+              lightGlobalTheme.typography['Components']['Avatar Initials']
                 .textTransform,
           },
         },
@@ -659,23 +661,28 @@ const questTheme = createTheme(
           },
           containedSizeMedium: {
             fontStyle:
-              globalTheme.typography['Components']['Button Medium'].fontStyle,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Button Medium'].fontFamily,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Button Medium'].fontWeight,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Button Medium'].fontSize,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Button Medium']
+              lightGlobalTheme.typography['Components']['Button Medium']
                 .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Button Medium'].lineHeight,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Button Medium']
+              lightGlobalTheme.typography['Components']['Button Medium']
                 .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Button Medium']
+              lightGlobalTheme.typography['Components']['Button Medium']
                 .textTransform,
             padding: `6px 16px`,
             borderRadius: `4px`,
@@ -683,131 +690,153 @@ const questTheme = createTheme(
           },
           containedSizeSmall: {
             fontStyle:
-              globalTheme.typography['Components']['Button Small'].fontStyle,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Button Small'].fontFamily,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Button Small'].fontWeight,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Button Small'].fontSize,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Button Small']
+              lightGlobalTheme.typography['Components']['Button Small']
                 .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Button Small'].lineHeight,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Button Small']
+              lightGlobalTheme.typography['Components']['Button Small']
                 .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Button Small']
+              lightGlobalTheme.typography['Components']['Button Small']
                 .textTransform,
             padding: `4px 10px`,
             borderRadius: `4px`,
             height: `30px`,
           },
           containedPrimary: {
-            backgroundColor: globalTheme.palette['Primary']['Main'],
-            boxShadow: globalTheme.customShadows['Elevation']['2'].boxShadow,
+            backgroundColor: lightGlobalTheme.palette['Primary']['Main'],
+            boxShadow:
+              lightGlobalTheme.customShadows['Elevation']['2'].boxShadow,
             color: `rgba(255, 255, 255, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Primary']['Dark'],
-              boxShadow: globalTheme.customShadows['Elevation']['4'].boxShadow,
+              backgroundColor: lightGlobalTheme.palette['Primary']['Dark'],
+              boxShadow:
+                lightGlobalTheme.customShadows['Elevation']['4'].boxShadow,
               color: `rgba(255, 255, 255, 1)`,
             },
             '&:disabled': {
               backgroundColor:
-                globalTheme.palette['Action']['Disabled Background (12p)'],
+                lightGlobalTheme.palette['Action']['Disabled Background (12p)'],
             },
           },
           containedSecondary: {
-            backgroundColor: globalTheme.palette['Secondary']['Main'],
-            boxShadow: globalTheme.customShadows['Elevation']['2'].boxShadow,
+            backgroundColor: lightGlobalTheme.palette['Secondary']['Main'],
+            boxShadow:
+              lightGlobalTheme.customShadows['Elevation']['2'].boxShadow,
             color: `rgba(255, 255, 255, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Secondary']['Dark'],
-              boxShadow: globalTheme.customShadows['Elevation']['4'].boxShadow,
+              backgroundColor: lightGlobalTheme.palette['Secondary']['Dark'],
+              boxShadow:
+                lightGlobalTheme.customShadows['Elevation']['4'].boxShadow,
               color: `rgba(255, 255, 255, 1)`,
             },
             '&:disabled': {
               backgroundColor:
-                globalTheme.palette['Action']['Disabled Background (12p)'],
+                lightGlobalTheme.palette['Action']['Disabled Background (12p)'],
             },
           },
           containedError: {
-            backgroundColor: globalTheme.palette['Error']['Main'],
-            boxShadow: globalTheme.customShadows['Elevation']['2'].boxShadow,
+            backgroundColor: lightGlobalTheme.palette['Error']['Main'],
+            boxShadow:
+              lightGlobalTheme.customShadows['Elevation']['2'].boxShadow,
             color: `rgba(255, 255, 255, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Error']['Dark'],
-              boxShadow: globalTheme.customShadows['Elevation']['4'].boxShadow,
+              backgroundColor: lightGlobalTheme.palette['Error']['Dark'],
+              boxShadow:
+                lightGlobalTheme.customShadows['Elevation']['4'].boxShadow,
               color: `rgba(255, 255, 255, 1)`,
             },
             '&:disabled': {
               backgroundColor:
-                globalTheme.palette['Action']['Disabled Background (12p)'],
+                lightGlobalTheme.palette['Action']['Disabled Background (12p)'],
             },
           },
           containedSuccess: {
-            backgroundColor: globalTheme.palette['Success']['Main'],
-            boxShadow: globalTheme.customShadows['Elevation']['2'].boxShadow,
+            backgroundColor: lightGlobalTheme.palette['Success']['Main'],
+            boxShadow:
+              lightGlobalTheme.customShadows['Elevation']['2'].boxShadow,
             color: `rgba(255, 255, 255, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Success']['Dark'],
-              boxShadow: globalTheme.customShadows['Elevation']['4'].boxShadow,
+              backgroundColor: lightGlobalTheme.palette['Success']['Dark'],
+              boxShadow:
+                lightGlobalTheme.customShadows['Elevation']['4'].boxShadow,
               color: `rgba(255, 255, 255, 1)`,
             },
             '&:disabled': {
               backgroundColor:
-                globalTheme.palette['Action']['Disabled Background (12p)'],
+                lightGlobalTheme.palette['Action']['Disabled Background (12p)'],
             },
           },
           containedInfo: {
-            backgroundColor: globalTheme.palette['Info']['Main'],
-            boxShadow: globalTheme.customShadows['Elevation']['2'].boxShadow,
+            backgroundColor: lightGlobalTheme.palette['Info']['Main'],
+            boxShadow:
+              lightGlobalTheme.customShadows['Elevation']['2'].boxShadow,
             color: `rgba(255, 255, 255, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Info']['Dark'],
-              boxShadow: globalTheme.customShadows['Elevation']['4'].boxShadow,
+              backgroundColor: lightGlobalTheme.palette['Info']['Dark'],
+              boxShadow:
+                lightGlobalTheme.customShadows['Elevation']['4'].boxShadow,
               color: `rgba(255, 255, 255, 1)`,
             },
             '&:disabled': {
               backgroundColor:
-                globalTheme.palette['Action']['Disabled Background (12p)'],
+                lightGlobalTheme.palette['Action']['Disabled Background (12p)'],
             },
           },
           containedWarning: {
-            backgroundColor: globalTheme.palette['Warning']['Main'],
-            boxShadow: globalTheme.customShadows['Elevation']['2'].boxShadow,
+            backgroundColor: lightGlobalTheme.palette['Warning']['Main'],
+            boxShadow:
+              lightGlobalTheme.customShadows['Elevation']['2'].boxShadow,
             color: `rgba(255, 255, 255, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Warning']['Dark'],
-              boxShadow: globalTheme.customShadows['Elevation']['4'].boxShadow,
+              backgroundColor: lightGlobalTheme.palette['Warning']['Dark'],
+              boxShadow:
+                lightGlobalTheme.customShadows['Elevation']['4'].boxShadow,
               color: `rgba(255, 255, 255, 1)`,
             },
             '&:disabled': {
               backgroundColor:
-                globalTheme.palette['Action']['Disabled Background (12p)'],
+                lightGlobalTheme.palette['Action']['Disabled Background (12p)'],
             },
           },
           textSizeMedium: {
             fontStyle:
-              globalTheme.typography['Components']['Button Medium'].fontStyle,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Button Medium'].fontFamily,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Button Medium'].fontWeight,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Button Medium'].fontSize,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Button Medium']
+              lightGlobalTheme.typography['Components']['Button Medium']
                 .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Button Medium'].lineHeight,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Button Medium']
+              lightGlobalTheme.typography['Components']['Button Medium']
                 .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Button Medium']
+              lightGlobalTheme.typography['Components']['Button Medium']
                 .textTransform,
             padding: `6px 8px`,
             borderRadius: `4px`,
@@ -815,23 +844,28 @@ const questTheme = createTheme(
           },
           textSizeLarge: {
             fontStyle:
-              globalTheme.typography['Components']['Button Large'].fontStyle,
+              lightGlobalTheme.typography['Components']['Button Large']
+                .fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Button Large'].fontFamily,
+              lightGlobalTheme.typography['Components']['Button Large']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Button Large'].fontWeight,
+              lightGlobalTheme.typography['Components']['Button Large']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Button Large'].fontSize,
+              lightGlobalTheme.typography['Components']['Button Large']
+                .fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Button Large']
+              lightGlobalTheme.typography['Components']['Button Large']
                 .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Button Large'].lineHeight,
+              lightGlobalTheme.typography['Components']['Button Large']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Button Large']
+              lightGlobalTheme.typography['Components']['Button Large']
                 .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Button Large']
+              lightGlobalTheme.typography['Components']['Button Large']
                 .textTransform,
             padding: `8px 11px`,
             borderRadius: `4px`,
@@ -839,23 +873,28 @@ const questTheme = createTheme(
           },
           textSizeSmall: {
             fontStyle:
-              globalTheme.typography['Components']['Button Small'].fontStyle,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Button Small'].fontFamily,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Button Small'].fontWeight,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Button Small'].fontSize,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Button Small']
+              lightGlobalTheme.typography['Components']['Button Small']
                 .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Button Small'].lineHeight,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Button Small']
+              lightGlobalTheme.typography['Components']['Button Small']
                 .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Button Small']
+              lightGlobalTheme.typography['Components']['Button Small']
                 .textTransform,
             padding: `4px 5px`,
             borderRadius: `4px`,
@@ -864,7 +903,8 @@ const questTheme = createTheme(
           textPrimary: {
             color: `rgba(25, 118, 210, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Primary']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Primary']['Shades']['4p'],
               color: `rgba(25, 118, 210, 1)`,
             },
             '&:disabled': {
@@ -874,7 +914,8 @@ const questTheme = createTheme(
           textSecondary: {
             color: `rgba(156, 39, 176, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Secondary']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Secondary']['Shades']['4p'],
               color: `rgba(156, 39, 176, 1)`,
             },
             '&:disabled': {
@@ -884,7 +925,8 @@ const questTheme = createTheme(
           textError: {
             color: `rgba(211, 47, 47, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Error']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Error']['Shades']['4p'],
               color: `rgba(211, 47, 47, 1)`,
             },
             '&:disabled': {
@@ -894,7 +936,8 @@ const questTheme = createTheme(
           textSuccess: {
             color: `rgba(46, 125, 50, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Success']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Success']['Shades']['4p'],
               color: `rgba(46, 125, 50, 1)`,
             },
             '&:disabled': {
@@ -904,7 +947,7 @@ const questTheme = createTheme(
           textInfo: {
             color: `rgba(2, 136, 209, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Info']['Shades']['4p'],
+              backgroundColor: lightGlobalTheme.palette['Info']['Shades']['4p'],
               color: `rgba(2, 136, 209, 1)`,
             },
             '&:disabled': {
@@ -914,7 +957,8 @@ const questTheme = createTheme(
           textWarning: {
             color: `rgba(237, 108, 2, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Warning']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Warning']['Shades']['4p'],
               color: `rgba(237, 108, 2, 1)`,
             },
             '&:disabled': {
@@ -923,23 +967,28 @@ const questTheme = createTheme(
           },
           outlinedSizeLarge: {
             fontStyle:
-              globalTheme.typography['Components']['Button Large'].fontStyle,
+              lightGlobalTheme.typography['Components']['Button Large']
+                .fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Button Large'].fontFamily,
+              lightGlobalTheme.typography['Components']['Button Large']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Button Large'].fontWeight,
+              lightGlobalTheme.typography['Components']['Button Large']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Button Large'].fontSize,
+              lightGlobalTheme.typography['Components']['Button Large']
+                .fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Button Large']
+              lightGlobalTheme.typography['Components']['Button Large']
                 .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Button Large'].lineHeight,
+              lightGlobalTheme.typography['Components']['Button Large']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Button Large']
+              lightGlobalTheme.typography['Components']['Button Large']
                 .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Button Large']
+              lightGlobalTheme.typography['Components']['Button Large']
                 .textTransform,
             padding: `8px 22px`,
             borderRadius: `4px`,
@@ -947,23 +996,28 @@ const questTheme = createTheme(
           },
           outlinedSizeMedium: {
             fontStyle:
-              globalTheme.typography['Components']['Button Medium'].fontStyle,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Button Medium'].fontFamily,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Button Medium'].fontWeight,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Button Medium'].fontSize,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Button Medium']
+              lightGlobalTheme.typography['Components']['Button Medium']
                 .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Button Medium'].lineHeight,
+              lightGlobalTheme.typography['Components']['Button Medium']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Button Medium']
+              lightGlobalTheme.typography['Components']['Button Medium']
                 .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Button Medium']
+              lightGlobalTheme.typography['Components']['Button Medium']
                 .textTransform,
             padding: `6px 16px`,
             borderRadius: `4px`,
@@ -971,23 +1025,28 @@ const questTheme = createTheme(
           },
           outlinedSizeSmall: {
             fontStyle:
-              globalTheme.typography['Components']['Button Small'].fontStyle,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Button Small'].fontFamily,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Button Small'].fontWeight,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Button Small'].fontSize,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Button Small']
+              lightGlobalTheme.typography['Components']['Button Small']
                 .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Button Small'].lineHeight,
+              lightGlobalTheme.typography['Components']['Button Small']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Button Small']
+              lightGlobalTheme.typography['Components']['Button Small']
                 .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Button Small']
+              lightGlobalTheme.typography['Components']['Button Small']
                 .textTransform,
             padding: `4px 10px`,
             borderRadius: `4px`,
@@ -998,7 +1057,8 @@ const questTheme = createTheme(
             boxSizing: `border-box`,
             color: `rgba(25, 118, 210, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Primary']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Primary']['Shades']['4p'],
               border: `1px solid rgba(25, 118, 210, 0.5)`,
               boxSizing: `border-box`,
               color: `rgba(25, 118, 210, 1)`,
@@ -1014,7 +1074,8 @@ const questTheme = createTheme(
             boxSizing: `border-box`,
             color: `rgba(156, 39, 176, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Secondary']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Secondary']['Shades']['4p'],
               border: `1px solid rgba(156, 39, 176, 0.5)`,
               boxSizing: `border-box`,
               color: `rgba(156, 39, 176, 1)`,
@@ -1030,7 +1091,8 @@ const questTheme = createTheme(
             boxSizing: `border-box`,
             color: `rgba(211, 47, 47, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Error']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Error']['Shades']['4p'],
               border: `1px solid rgba(211, 47, 47, 0.5)`,
               boxSizing: `border-box`,
               color: `rgba(211, 47, 47, 1)`,
@@ -1046,7 +1108,8 @@ const questTheme = createTheme(
             boxSizing: `border-box`,
             color: `rgba(46, 125, 50, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Success']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Success']['Shades']['4p'],
               border: `1px solid rgba(46, 125, 50, 0.5)`,
               boxSizing: `border-box`,
               color: `rgba(46, 125, 50, 1)`,
@@ -1062,7 +1125,7 @@ const questTheme = createTheme(
             boxSizing: `border-box`,
             color: `rgba(2, 136, 209, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Info']['Shades']['4p'],
+              backgroundColor: lightGlobalTheme.palette['Info']['Shades']['4p'],
               border: `1px solid rgba(2, 136, 209, 0.5)`,
               boxSizing: `border-box`,
               color: `rgba(2, 136, 209, 1)`,
@@ -1078,7 +1141,8 @@ const questTheme = createTheme(
             boxSizing: `border-box`,
             color: `rgba(237, 108, 2, 1)`,
             '&:hover': {
-              backgroundColor: globalTheme.palette['Warning']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Warning']['Shades']['4p'],
               border: `1px solid rgba(237, 108, 2, 0.5)`,
               boxSizing: `border-box`,
               color: `rgba(237, 108, 2, 1)`,
@@ -1100,7 +1164,8 @@ const questTheme = createTheme(
         styleOverrides: {
           root: {
             '&:hover': {
-              backgroundColor: globalTheme.palette['Primary']['Shades']['4p'],
+              backgroundColor:
+                lightGlobalTheme.palette['Primary']['Shades']['4p'],
               borderRadius: `19px`,
             },
           },
@@ -1109,38 +1174,45 @@ const questTheme = createTheme(
       MuiFormControlLabel: {
         styleOverrides: {
           label: {
-            color: globalTheme.palette['Text']['Primary'],
-            fontStyle: globalTheme.typography['Typography']['Body 1'].fontStyle,
+            color: lightGlobalTheme.palette['Text']['Primary'],
+            fontStyle:
+              lightGlobalTheme.typography['Typography']['Body 1'].fontStyle,
             fontFamily:
-              globalTheme.typography['Typography']['Body 1'].fontFamily,
+              lightGlobalTheme.typography['Typography']['Body 1'].fontFamily,
             fontWeight:
-              globalTheme.typography['Typography']['Body 1'].fontWeight,
-            fontSize: globalTheme.typography['Typography']['Body 1'].fontSize,
+              lightGlobalTheme.typography['Typography']['Body 1'].fontWeight,
+            fontSize:
+              lightGlobalTheme.typography['Typography']['Body 1'].fontSize,
             letterSpacing:
-              globalTheme.typography['Typography']['Body 1'].letterSpacing,
+              lightGlobalTheme.typography['Typography']['Body 1'].letterSpacing,
             lineHeight:
-              globalTheme.typography['Typography']['Body 1'].lineHeight,
+              lightGlobalTheme.typography['Typography']['Body 1'].lineHeight,
             textDecoration:
-              globalTheme.typography['Typography']['Body 1'].textDecoration,
+              lightGlobalTheme.typography['Typography']['Body 1']
+                .textDecoration,
             textTransform:
-              globalTheme.typography['Typography']['Body 1'].textTransform,
+              lightGlobalTheme.typography['Typography']['Body 1'].textTransform,
             '&.Mui-disabled': {
-              color: globalTheme.palette['Action']['Disabled (26p)'],
+              color: lightGlobalTheme.palette['Action']['Disabled (26p)'],
               fontStyle:
-                globalTheme.typography['Typography']['Body 1'].fontStyle,
+                lightGlobalTheme.typography['Typography']['Body 1'].fontStyle,
               fontFamily:
-                globalTheme.typography['Typography']['Body 1'].fontFamily,
+                lightGlobalTheme.typography['Typography']['Body 1'].fontFamily,
               fontWeight:
-                globalTheme.typography['Typography']['Body 1'].fontWeight,
-              fontSize: globalTheme.typography['Typography']['Body 1'].fontSize,
+                lightGlobalTheme.typography['Typography']['Body 1'].fontWeight,
+              fontSize:
+                lightGlobalTheme.typography['Typography']['Body 1'].fontSize,
               letterSpacing:
-                globalTheme.typography['Typography']['Body 1'].letterSpacing,
+                lightGlobalTheme.typography['Typography']['Body 1']
+                  .letterSpacing,
               lineHeight:
-                globalTheme.typography['Typography']['Body 1'].lineHeight,
+                lightGlobalTheme.typography['Typography']['Body 1'].lineHeight,
               textDecoration:
-                globalTheme.typography['Typography']['Body 1'].textDecoration,
+                lightGlobalTheme.typography['Typography']['Body 1']
+                  .textDecoration,
               textTransform:
-                globalTheme.typography['Typography']['Body 1'].textTransform,
+                lightGlobalTheme.typography['Typography']['Body 1']
+                  .textTransform,
             },
           },
           root: {
@@ -1152,11 +1224,12 @@ const questTheme = createTheme(
         styleOverrides: {
           root: {
             borderRadius: `4px`,
-            boxShadow: globalTheme.customShadows['Elevation']['24'].boxShadow,
+            boxShadow:
+              lightGlobalTheme.customShadows['Elevation']['24'].boxShadow,
             padding: `8px 24px`,
           },
           paper: {
-            backgroundColor: globalTheme.palette['Background']['Paper'],
+            backgroundColor: lightGlobalTheme.palette['Background']['Paper'],
           },
         },
       },
@@ -1354,84 +1427,108 @@ const questTheme = createTheme(
       MuiFilledInput: {
         styleOverrides: {
           root: {
-            color: globalTheme.palette['Text']['Primary'],
+            color: lightGlobalTheme.palette['Text']['Primary'],
             fontStyle:
-              globalTheme.typography['Components']['Input Text'].fontStyle,
+              lightGlobalTheme.typography['Components']['Input Text'].fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Input Text'].fontFamily,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Input Text'].fontWeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Input Text'].fontSize,
+              lightGlobalTheme.typography['Components']['Input Text'].fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Input Text'].letterSpacing,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Input Text'].lineHeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Input Text'].textDecoration,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Input Text'].textTransform,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textTransform,
           },
           sizeSmall: {
-            color: globalTheme.palette['Text']['Primary'],
+            color: lightGlobalTheme.palette['Text']['Primary'],
             fontStyle:
-              globalTheme.typography['Components']['Input Text'].fontStyle,
+              lightGlobalTheme.typography['Components']['Input Text'].fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Input Text'].fontFamily,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Input Text'].fontWeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Input Text'].fontSize,
+              lightGlobalTheme.typography['Components']['Input Text'].fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Input Text'].letterSpacing,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Input Text'].lineHeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Input Text'].textDecoration,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Input Text'].textTransform,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textTransform,
           },
         },
       },
       MuiInput: {
         styleOverrides: {
           root: {
-            color: globalTheme.palette['Text']['Primary'],
+            color: lightGlobalTheme.palette['Text']['Primary'],
             fontStyle:
-              globalTheme.typography['Components']['Input Text'].fontStyle,
+              lightGlobalTheme.typography['Components']['Input Text'].fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Input Text'].fontFamily,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Input Text'].fontWeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Input Text'].fontSize,
+              lightGlobalTheme.typography['Components']['Input Text'].fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Input Text'].letterSpacing,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Input Text'].lineHeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Input Text'].textDecoration,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Input Text'].textTransform,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textTransform,
           },
           sizeSmall: {
-            color: globalTheme.palette['Text']['Primary'],
+            color: lightGlobalTheme.palette['Text']['Primary'],
             fontStyle:
-              globalTheme.typography['Components']['Input Text'].fontStyle,
+              lightGlobalTheme.typography['Components']['Input Text'].fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Input Text'].fontFamily,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Input Text'].fontWeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Input Text'].fontSize,
+              lightGlobalTheme.typography['Components']['Input Text'].fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Input Text'].letterSpacing,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Input Text'].lineHeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Input Text'].textDecoration,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Input Text'].textTransform,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textTransform,
           },
         },
       },
@@ -1454,84 +1551,108 @@ const questTheme = createTheme(
       MuiInputLabel: {
         styleOverrides: {
           root: {
-            color: globalTheme.palette['Text']['Secondary'],
+            color: lightGlobalTheme.palette['Text']['Secondary'],
             fontStyle:
-              globalTheme.typography['Components']['Input Text'].fontStyle,
+              lightGlobalTheme.typography['Components']['Input Text'].fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Input Text'].fontFamily,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Input Text'].fontWeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Input Text'].fontSize,
+              lightGlobalTheme.typography['Components']['Input Text'].fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Input Text'].letterSpacing,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Input Text'].lineHeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Input Text'].textDecoration,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Input Text'].textTransform,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textTransform,
           },
           sizeSmall: {
-            color: globalTheme.palette['Text']['Secondary'],
+            color: lightGlobalTheme.palette['Text']['Secondary'],
             fontStyle:
-              globalTheme.typography['Components']['Input Text'].fontStyle,
+              lightGlobalTheme.typography['Components']['Input Text'].fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Input Text'].fontFamily,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Input Text'].fontWeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Input Text'].fontSize,
+              lightGlobalTheme.typography['Components']['Input Text'].fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Input Text'].letterSpacing,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Input Text'].lineHeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Input Text'].textDecoration,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Input Text'].textTransform,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textTransform,
           },
         },
       },
       MuiOutlinedInput: {
         styleOverrides: {
           root: {
-            color: globalTheme.palette['Text']['Primary'],
+            color: lightGlobalTheme.palette['Text']['Primary'],
             fontStyle:
-              globalTheme.typography['Components']['Input Text'].fontStyle,
+              lightGlobalTheme.typography['Components']['Input Text'].fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Input Text'].fontFamily,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Input Text'].fontWeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Input Text'].fontSize,
+              lightGlobalTheme.typography['Components']['Input Text'].fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Input Text'].letterSpacing,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Input Text'].lineHeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Input Text'].textDecoration,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Input Text'].textTransform,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textTransform,
           },
           sizeSmall: {
-            color: globalTheme.palette['Text']['Primary'],
+            color: lightGlobalTheme.palette['Text']['Primary'],
             fontStyle:
-              globalTheme.typography['Components']['Input Text'].fontStyle,
+              lightGlobalTheme.typography['Components']['Input Text'].fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Input Text'].fontFamily,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Input Text'].fontWeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .fontWeight,
             fontSize:
-              globalTheme.typography['Components']['Input Text'].fontSize,
+              lightGlobalTheme.typography['Components']['Input Text'].fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Input Text'].letterSpacing,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Input Text'].lineHeight,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Input Text'].textDecoration,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Input Text'].textTransform,
+              lightGlobalTheme.typography['Components']['Input Text']
+                .textTransform,
           },
         },
       },
@@ -1540,22 +1661,26 @@ const questTheme = createTheme(
           tooltip: {
             backgroundColor: `rgba(97, 97, 97, 0.9)`,
             borderRadius: `4px`,
-            color: globalTheme.palette['Common']['White']['100p'],
+            color: lightGlobalTheme.palette['Common']['White']['100p'],
             fontStyle:
-              globalTheme.typography['Components']['Tooltip'].fontStyle,
+              lightGlobalTheme.typography['Components']['Tooltip'].fontStyle,
             fontFamily:
-              globalTheme.typography['Components']['Tooltip'].fontFamily,
+              lightGlobalTheme.typography['Components']['Tooltip'].fontFamily,
             fontWeight:
-              globalTheme.typography['Components']['Tooltip'].fontWeight,
-            fontSize: globalTheme.typography['Components']['Tooltip'].fontSize,
+              lightGlobalTheme.typography['Components']['Tooltip'].fontWeight,
+            fontSize:
+              lightGlobalTheme.typography['Components']['Tooltip'].fontSize,
             letterSpacing:
-              globalTheme.typography['Components']['Tooltip'].letterSpacing,
+              lightGlobalTheme.typography['Components']['Tooltip']
+                .letterSpacing,
             lineHeight:
-              globalTheme.typography['Components']['Tooltip'].lineHeight,
+              lightGlobalTheme.typography['Components']['Tooltip'].lineHeight,
             textDecoration:
-              globalTheme.typography['Components']['Tooltip'].textDecoration,
+              lightGlobalTheme.typography['Components']['Tooltip']
+                .textDecoration,
             textTransform:
-              globalTheme.typography['Components']['Tooltip'].textTransform,
+              lightGlobalTheme.typography['Components']['Tooltip']
+                .textTransform,
           },
           arrow: {
             color: `rgba(97, 97, 97, 0.9)`,
@@ -1564,7 +1689,7 @@ const questTheme = createTheme(
       },
     },
   },
-  globalTheme
+  lightGlobalTheme
 );
 
-export default questTheme;
+export default lightQuestTheme;
