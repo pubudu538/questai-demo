@@ -37,6 +37,8 @@ const useFooter1 = () => {
 
   const data: any = { currentVariant };
 
+  const data1: any = { currentVariant };
+
   const fns: any = { setCurrentVariant };
 
   return { data, fns };
