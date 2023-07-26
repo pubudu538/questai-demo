@@ -31,7 +31,9 @@ const useSampleCard = (props: SampleCardProps) => {
     delay = 0,
     easing = 'linear'
   ) => {
-    // code to switch state
+    duration = 10,
+    delay = 10,
+    easing = 'linear'
   };
 
   const data: any = { data };
