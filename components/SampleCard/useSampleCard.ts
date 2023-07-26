@@ -27,9 +27,7 @@ const useSampleCard = (props: SampleCardProps) => {
     // code to switch state
   };
   const switchStateToTypeQuest = (
-    duration = 0,
-    delay = 0,
-    easing = 'linear'
+    // code to switch state
   ) => {
     duration = 10,
     delay = 10,
