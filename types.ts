@@ -15,15 +15,18 @@
 
 
 
+
 export interface SampleCardGridProps {
   className?: any;
 }
 
 
 
+
 export interface Card2Props {
   className?: any;
 }
+
 
 
 
@@ -35,9 +38,11 @@ export interface BuildAreaManualBuildProps {
 
 
 
+
 export interface HandDrawn04Props {
   className?: any;
 }
+
 
 
 export interface Form2Props {
@@ -45,10 +50,12 @@ export interface Form2Props {
 }
 
 
+
 export interface SampleCardProps {
   className?: any;
   metadata: any;
 }
+
 
 
 
@@ -59,15 +66,18 @@ export interface DemoCardProps {
 
 
 
+
 export interface Frame96Props {
   className?: any;
 }
 
 
 
+
 export interface IconTimeProps {
   className?: any;
 }
+
 
 
 
