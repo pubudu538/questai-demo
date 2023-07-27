@@ -17,6 +17,22 @@
 
 
 
+
+export interface Footer1Props {
+  className?: any;
+  metadata: any;
+}
+
+
+
+
+export interface Footer1Props {
+  className?: any;
+  metadata: any;
+}
+
+
+
 export interface SampleCardGridProps {
   className?: any;
 }
@@ -25,9 +41,11 @@ export interface SampleCardGridProps {
 
 
 
+
 export interface Card2Props {
   className?: any;
 }
+
 
 
 
@@ -43,6 +61,7 @@ export interface BuildAreaManualBuildProps {
 
 
 
+
 export interface HandDrawn04Props {
   className?: any;
 }
@@ -50,18 +69,7 @@ export interface HandDrawn04Props {
 
 
 
-export interface Footer1Props {
-  className?: any;
-  metadata: any;
-}
 
-
-
-
-export interface Footer1Props {
-  className?: any;
-  metadata: any;
-}
 
 
 export interface Form2Props {
@@ -71,10 +79,12 @@ export interface Form2Props {
 
 
 
+
 export interface SampleCardProps {
   className?: any;
   metadata: any;
 }
+
 
 
 
@@ -89,6 +99,7 @@ export interface DemoCardProps {
 
 
 
+
 export interface Frame96Props {
   className?: any;
 }
@@ -97,9 +108,11 @@ export interface Frame96Props {
 
 
 
+
 export interface IconTimeProps {
   className?: any;
 }
+
 
 
 
