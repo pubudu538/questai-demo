@@ -121,3 +121,119 @@ export interface IconTimeProps {
 export interface IconCommitProps {
   className?: any;
 }
+
+export interface Footer1Props {
+  className?: any;
+  metadata: any;
+}
+
+
+
+
+export interface Footer1Props {
+  className?: any;
+  metadata: any;
+}
+
+
+
+
+
+
+export interface SampleCardGridProps {
+  className?: any;
+}
+
+
+
+
+
+
+
+export interface Card2Props {
+  className?: any;
+}
+
+
+
+
+
+
+
+export interface BuildAreaManualBuildProps {
+  className?: any;
+  testvl: any;
+  prop2: any;
+}
+
+
+
+
+
+
+
+export interface HandDrawn04Props {
+  className?: any;
+}
+
+
+
+
+
+
+
+
+export interface Form2Props {
+  className?: any;
+}
+
+
+
+
+
+
+export interface SampleCardProps {
+  className?: any;
+  metadata: any;
+}
+
+
+
+
+
+
+
+export interface DemoCardProps {
+  className?: any;
+  metadata: any;
+}
+
+
+
+
+
+
+
+export interface Frame96Props {
+  className?: any;
+}
+
+
+
+
+
+
+
+export interface IconTimeProps {
+  className?: any;
+}
+
+
+
+
+
+
+
+export interface IconCommitProps {
+  className?: any;
+}
